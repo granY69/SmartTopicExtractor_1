@@ -1,0 +1,48 @@
+{% extends 'rootapp/base.html' %}
+{% load static %}
+{% block content %}
+
+<style>
+.text-justify {
+  text-align: justify;
+}
+</style>
+
+<br><br>
+<div class="row"><br><br>
+<div class="col text-center">
+          <h2 class="thb-section-block-title" style="font-size: 52px;">
+          <span>About</span></h2>
+          <img src="{% static 'rootapp/images/nlp.png' %}" width="500px" alt="">
+</div>
+</div>
+
+<div class='container'>
+        <div class="thb-section-row-inner-wrapper">
+  <div id="thb-section-0-row-2-column-0" class="thb-section-column thb-section-column-size-one-half thb-section-column-index-0 " style="">
+    <div class="thb-section-column-inner-wrapper">
+      <div id="thb-section-0-row-2-column-0-block-0" class="thb-section-column-block thb-section-column-block-thb_text_box icon-small layout-left icon-style-a layout-style-a " data-section="0" data-row="2" data-column="0" data-index="0">
+        <div class="thb-section-block-content">
+          <div class="thb-text">
+            <hr>
+            <p class="text-justify"><b>Smart Topic Extractor</b> is a basic and essential subject for text mining and information retrieval. It is content analysis method that automatically extracts the most used and most valuable words and phrases from a text. It helps to summarize the matter of texts and identify the main topics considered. Topic detection, topic modelling, or topic extraction is a machine learning method that combines and understands huge sets of text data by generating “tags” or classifications according to specific topic or theme. When we need to analyze huge amounts of text data, is a huge task to do it manually because it is time-consuming. Manually categorization through large volume of data creates more troubles and mistakes. New advancement had made an easy way for achievements in extraction method and deep learning in text mining.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="thb-section-0-row-2-column-1" class="thb-section-column thb-section-column-size-one-half thb-section-column-index-1 " style="">
+    <div class="thb-section-column-inner-wrapper">
+      <div id="thb-section-0-row-2-column-1-block-0" class="thb-section-column-block thb-section-column-block-thb_text_box icon-small layout-left icon-style-a layout-style-a " data-section="0" data-row="2" data-column="1" data-index="0">
+        <div class="thb-section-block-content">
+          <div class="thb-text">
+            <p class="text-justify">Smart topic extraction uses machine learning <b>artificial intelligence (AI)</b> with <b>natural language processing (NLP)</b> to crack down human language that can be recognized and examined by machines. Topic analysis models can detect themes in a text with progressive machine learning algorithms that calculate words and discover similar key word patterns. it is used to find keywords by means of text like regular documents, business reports, pdf documents, online forums or reviews, news articles and reports, and more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{% include 'rootapp/footer.html' %}
+{% endblock content %}

@@ -1,0 +1,89 @@
+{% extends 'rootapp/base.html' %}
+{% load static %}
+
+{% block header %}
+        <header class="py-5">
+            <div class="container px-lg-5">
+                <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+                    <div class="m-4 m-lg-5">
+                        <h1 class="display-5 fw-bold">A SMART Topic Extractor</h1>
+                        <p class="fs-4">Extracts Topics from large volume of data. Extracts Topics from large volume of data.</p>
+                        {% block inputbtn %}
+                        <a class="btn btn-primary btn-lg" href="/textinput">Text Input</a>
+                        <a class="btn btn-primary btn-lg" href="/uploadfile">File Upload</a>
+                        {% endblock inputbtn %}
+                    </div>
+                </div>
+            </div>
+        </header>
+{% endblock header %}
+
+{% block content %}
+<section class="pt-4">
+            <div class="container px-lg-5">
+                <!-- Page Features-->
+                <div class="row gx-lg-5">
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-book"></i></div>
+                                <h2 class="fs-4 fw-bold">Read PDF Files</h2>
+                                <p class="mb-0">With using pdfminer we scanned data from pdf files.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-cursor-text"></i></div>
+                                <h2 class="fs-4 fw-bold">Text Input</h2>
+                                <p class="mb-0">It also takes text input and handles it.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-file-earmark-word"></i></div>
+                                <h2 class="fs-4 fw-bold">Word Document</h2>
+                                <p class="mb-0">It reads .doc and .docx file using docx python library.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-code"></i></div>
+                                <h2 class="fs-4 fw-bold">Simple clean code</h2>
+                                <p class="mb-0">We keep our dependencies up to date and squash bugs as they come!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-upload"></i></div>
+                                <h2 class="fs-4 fw-bold">Text Document</h2>
+                                <p class="mb-0">It reads .txt documents using python file handling system.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
+                                <h2 class="fs-4 fw-bold">Django Web Framework</h2>
+                                <p class="mb-0">Django is a Python-based free and open-source web framework.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% block footer %}
+<footer class="py-5 bg-dark">
+    <div class="container"><p class="m-0 text-center text-white">Copyright © 2021 Smart Topic Extractor | A final year project under COMSATS University Islamabad, Attock Campus supervised by Mr. IrshadUllah</p></div>
+</footer>
+{% endblock footer %}
+{% endblock content %}
+

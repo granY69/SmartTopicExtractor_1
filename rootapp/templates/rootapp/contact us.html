@@ -1,0 +1,52 @@
+{% extends 'rootapp/base.html' %}
+{% load static %}
+{% block head %}
+{{ block.super }}
+<link href="{% static 'fontawesome_free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+{% endblock head %}
+{% block content %}
+<br><br>
+<div class="row"><br><br>
+<div class="col text-center">
+          <h2 class="thb-section-block-title" style="font-size: 52px;">
+          <span>CONTACT US</span></h2>
+          <img src="{% static 'rootapp/image/nlp.png' %}" width="500px" alt="">
+</div>
+</div>
+
+<div class="row text-center">
+<div class="col-5"></div>
+<div class="col">
+    <div class="address wow fadeInLeft animated bg-dark" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s; border-radius:15px; opacity: 80%;">
+        <i class="fa fa-map-marker"></i>
+        <a href="#" style="text-decoration: none; color:white;">
+        <span>Locate us</span>
+        <p>Attock</p>
+        </a>
+    </div><br>
+    <div class="address wow fadeInUp animated bg-dark" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s; border-radius:15px; opacity: 80%;">
+        <a href="tel://+92-316-0898250" style="text-decoration: none; color:white;">
+            <i class="fa-fw fa fa-phone"></i>
+            <span>Give us a call</span>
+            <p>Office: +92-316-0898250</p>
+        </a>
+    </div><br>
+    <div class="address wow fadeInUp animated bg-dark" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s; border-radius:15px; opacity: 80%;">
+        <a href="mailto:cbyamin806@gmail.com" style="text-decoration: none; color:white;">
+            <i class="fa fa-paper-plane"></i>
+            <span>Reach Us At</span>
+            <p>E-Mail: cbyamin806@gmail.com</p>
+        </a>
+    </div><br>
+    <div class="address wow fadeInUp animated bg-dark" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s; border-radius:15px; opacity: 80%;">
+        <a href="#" style="text-decoration: none; color:white;">
+            <i class="fa fa-globe"></i>
+            <span>Our Site</span>
+            <p>Website: www.cui.com</p>
+        </a>
+    </div>
+</div>
+<div class="col-5"></div>
+</div>
+{% include 'rootapp/footer.html' %}
+{% endblock content %}
