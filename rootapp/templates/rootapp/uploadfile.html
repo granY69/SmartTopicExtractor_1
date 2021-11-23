@@ -4,17 +4,17 @@
 
 <div class="row">
 <div class="col text-center">
-
+<div class="row"><br><br><br></div>
 <div class="form-group">
     <h3>Upload File types(.PDF, .TXT, .DOCX, .DOC)</h3>
+<div class="row"><br></div>
     <div class="row">
     <div class="col-2">
     </div>
     <div class="col-8">
     <form action="" method="POST" enctype="multipart/form-data">
     {% csrf_token %}
-    <br><input type="file" name="document" accept="application/msword, .txt, .pdf, .docx"><br><br>
-    <button class="btn btn-outline-dark btn-large">UPLOAD</button>
+    <br><input type="file" name="document" accept="application/msword, .txt, .pdf, .docx" required><button class="btn btn-outline-dark btn-large">UPLOAD</button>
     </div>
     <div class="col-2">
     </div>

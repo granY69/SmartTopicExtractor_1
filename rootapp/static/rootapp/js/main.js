@@ -1,3 +1,3 @@
-   function clearIt(){
-    document.getElementById("input_text_content").value = "";
-    }
+function clearIt(){
+document.getElementById("input_text_content").value = "";
+}

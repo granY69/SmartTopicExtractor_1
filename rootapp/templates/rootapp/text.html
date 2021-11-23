@@ -3,14 +3,14 @@
 {% block content %}
 <div class="row">
 <div class="form-group">
-    <form class='form-control' action="../inputread/" method="POST">
+    <form class='form-control bg-transparent' action="../inputread/" method="POST">
     {% csrf_token %}
     <div class="row">
     <div class="col-2">
     </div>
     <div class="col-8">
     <h3>Enter you text!</h3>
-    <textarea class="form-control" rows="18" name="content" id="input_text_content" placeholder="Your Text Here.."></textarea><br>
+    <textarea class="form-control" rows="17" name="content" id="input_text_content" placeholder="Your Text Here.." required></textarea><br>
     <button class="btn btn-outline-dark btn-large" type="button" onclick="clearIt()">Clear</button>
     <button class="btn btn-outline-dark btn-large">Analyze</button><br><br>
     </div>
